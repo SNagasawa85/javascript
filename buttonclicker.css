@@ -1,0 +1,103 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    /* outline: 1px solid red; */
+    font-family: sans-serif;
+}
+/* general style */
+
+.flex {
+    display: flex;
+    }
+
+.align-center {
+    align-items: center;
+}
+
+.border {
+    border: 2px solid black;
+}
+
+
+/* Specific CSS */
+h1 {
+    flex: 3;
+}
+
+.header {
+    margin: 0 7%;
+    background-color: rgb(185, 184, 184);
+    justify-content: space-between;
+    padding: 10px 2%;
+    gap: 4%
+}
+
+.logbtn {
+    background-color: rgb(44, 121, 209);
+    color: white;
+    box-shadow: 5px 5px 10px black;
+    flex:1;
+}
+
+.search {
+    flex: 4;
+}
+
+.main {
+    padding: 2% 7%;
+    gap: 2%;
+}
+.col1 {
+    flex:2;
+}
+.col2{
+    flex: 1;
+}
+
+/* left side boxes */
+.lowdef {
+    gap: 7%;
+    text-align: center;
+    vertical-align: top;
+}
+.info {
+    gap: 15%;
+}
+.define {
+    font-style: normal;
+    vertical-align: top;
+    margin-bottom:25%;
+}
+.defbox {
+    padding: 2%;
+    margin-bottom: 2%;
+}
+.likebtn {
+    background-color: yellow;
+    /* border: 2px solid black; */
+    box-shadow: 2px 2px 4px black;
+    margin-top: 10%;
+}
+.word {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28pt;
+}
+p{
+    font-weight: bold;
+}
+
+/* right side box */
+.addDef {
+    padding: 10px;
+}
+.yourDef {
+    font-size: 16pt;
+}
+.defbtn {
+    margin: 20px 12% 0px;
+    background-color: seagreen;
+    text-align: center;
+    padding: 3px 10px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Challenges</title>
+</head>
+<body>
+    <script>
+
+        function printOdds(){
+            for(var i=1;i<21;i++){
+                if(i%2!==0){
+                    console.log(i);
+                }
+            }
+        }
+        printOdds();
+
+        function decrease3(){
+            for(var i=100;i>0;i--){
+                if(i%3===0){
+                    console.log(i);
+                }
+            }
+        }
+        decrease3();
+        
+        function sequence(arr){
+            for(var i=0;i<arr.length;i++){
+                console.log(arr[i]);
+            }
+        }
+        sequence([4,2.5,1,-0.5,-2,-3.5]);
+
+        function sigma(){
+            var sum=0;
+            for(var i=0;i<101;i++){
+                sum=sum+i;
+            }
+            console.log(sum);
+        }
+        sigma();
+
+        function factorial(){
+            var product=1;
+            for(var i=1;i<13;i++){
+                product=product*i;
+            }
+            console.log(product);
+        }
+        factorial();
+
+        
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+    <link rel="stylesheet" href="buttonclicker.css">
+    <script src="buttonclicker.js"></script>
+</head>
+<body>
+    <div class="header align-center flex">
+        <h1>Dojonary</h1><input type="text" placeholder="Search" class="search">
+        <button onclick="login(this)" class="logbtn">Login</button>
+    </div>
+    <!-- main body container -->
+    <div class="main flex">
+        <!-- column 1 -->
+        <div class="col1">
+            <div class="defbox border">
+                <span class="word">ninja</span>
+                    <!-- descriptors underneath -->
+                    <div class="info flex">
+                        <div class="lowdef align-center">
+                            <h2><i>noun</i></h2><br>
+                            <p>Plural: <i>ninjas</p>
+                            <button onclick="like(this)" class="likebtn">13 Likes</button>
+                        </div>
+                    <!-- definition on right -->
+                        <div class="def">
+                                <p class="define">A practitioner skilled in the<br> <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="defbox border">
+                <span class="word">ninja</span>
+                    <!-- descriptors underneath -->
+                    <div class="info flex">
+                        <div class="lowdef align-center">
+                            <h2><i>noun</i></h2><br>
+                            <p>Plural: <i>ninjas</p>
+                            <button onclick="like(this)" class="likebtn">37Likes</button>
+                        </div>
+                    <!-- definition on right -->
+                        <div class="def">
+                                <p class="define">A <a href="#">programmer</a> who breaks<br>down problems with <a href="#">zen</a>-like<br>focus</a></p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+
+        <!-- column 2 -->
+        <div class="col2">
+            <div class="addDef border">
+                <p class="yourDef">Dojonary is<br>defined by<strong>YOU</strong></p>
+                <button onclick="hide(this)" class="defbtn">Add Definition</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
