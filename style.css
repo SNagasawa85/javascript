@@ -1,0 +1,22 @@
+/* css reset */
+* {
+    outline: 1px solid red;
+    margin: 0px;
+    border: none;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.top {
+    margin-left: 30px;
+}
+p {
+    margin-left: 30px;
+    font-size: 18pt;
+}
+ol {
+    margin-left: 65px;
+    margin-top: 20px;
+}
+h1 {
+    margin-bottom: 10px;
+}
