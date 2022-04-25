@@ -2,8 +2,9 @@ function login(Element){
     Element.innerText = "Logout";
 }
 
-function like(){
-    alert ("\n ninja was liked!")
+function like(elm){
+    elm.innerText= parseInt(elm.innerText)+1;
+    alert ("\n You Liked this definition!");
 }
 
 function hide(Element){

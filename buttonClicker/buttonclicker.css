@@ -5,7 +5,22 @@
     /* outline: 1px solid red; */
     font-family: sans-serif;
 }
+/* Background Image */
+body {
+    background-image: url("ninja.png");
+    background-attachment: fixed;
+    background-size: auto 80%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    /* opacity: .3; */
+}
+
+
 /* general style */
+
+.op{
+    opacity: 1;
+}
 
 .flex {
     display: flex;
@@ -16,7 +31,8 @@
 }
 
 .border {
-    border: 2px solid black;
+    border: 3px solid silver;
+    border-radius: 10px;
 }
 
 
@@ -26,8 +42,8 @@ h1 {
 }
 
 .header {
-    margin: 0 7%;
-    background-color: rgb(185, 184, 184);
+    margin: 1% 7% 0;
+    background-color: rgba(220, 233, 48, 0.3);
     justify-content: space-between;
     padding: 10px 2%;
     gap: 4%
@@ -72,12 +88,17 @@ h1 {
 .defbox {
     padding: 2%;
     margin-bottom: 2%;
+    background-color: rgba(220, 233, 48, 0.3);
 }
 .likebtn {
     background-color: yellow;
     /* border: 2px solid black; */
     box-shadow: 2px 2px 4px black;
     margin-top: 10%;
+}
+.likebtn::after{
+    content:" Likes";
+    font-weight: bold;
 }
 .word {
     font-style: normal;
@@ -91,8 +112,10 @@ p{
 /* right side box */
 .addDef {
     padding: 10px;
+    background-color: rgba(220, 233, 48, 0.4);
 }
 .yourDef {
+    color: black;
     font-size: 16pt;
 }
 .defbtn {

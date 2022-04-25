@@ -1,0 +1,77 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+    font-family: sans-serif;
+}
+.flex1 {
+    flex:1;
+}
+.head {
+    background-color: black;
+    color: white;
+    padding: 3px;
+    margin: 0 10%;
+    margin-bottom: 10px;
+}
+.main {
+    display:flex;
+    padding: 2% 10%;
+    gap: 2%;
+}
+.col1 {
+    padding:10px;
+    text-align: center;
+    flex: 1;
+    border: 2px solid black;
+    height:225px;
+}
+.pic {
+    margin-bottom: 10px;
+}
+.user {
+    margin-top:10px;
+    font-size: 18pt;
+    font-weight: bold;
+}
+.col2 {
+    flex: 3;
+}
+.likebtn {
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 12pt;
+    color: black;
+    width: 15px;
+    box-shadow: 2px 2px 1px black;
+    flex:.5;
+}
+.top1 {
+    margin-bottom: 5%;
+}
+.toptext {
+    display: flex;
+    padding: 2%;;
+    align-items: center;
+    font-weight: bold;
+    border: 2px solid grey;
+    border-bottom-style: none;
+    justify-content: space-evenly;
+}
+h2 {
+    flex:2;
+    margin-right: 35%;
+}
+.filler {
+    text-align: left;
+    padding: 2%;
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px solid grey;
+    border-top-style: none;
+}
+.currentLikes {
+    flex:1;
+}
+

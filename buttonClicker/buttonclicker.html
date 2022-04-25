@@ -9,8 +9,9 @@
     <script src="buttonclicker.js"></script>
 </head>
 <body>
+    <div class="wrapper flex"></div>
     <!-- top bar -->
-    <div class="header align-center flex">
+    <div class="header op align-center flex border">
         <h1>Dojonary</h1><input type="text" placeholder="Search" class="search">
         <button onclick="login(this)" class="logbtn">Login</button>
     </div>
@@ -25,7 +26,7 @@
                         <div class="lowdef align-center">
                             <h2><i>noun</i></h2><br>
                             <p>Plural: <i>ninjas</p>
-                            <button onclick="like(this)" class="likebtn">13 Likes</button>
+                            <button onclick="like(this)" class="likebtn">13</button>
                         </div>
                     <!-- definition on right -->
                         <div class="def">
@@ -41,7 +42,7 @@
                         <div class="lowdef align-center">
                             <h2><i>noun</i></h2><br>
                             <p>Plural: <i>ninjas</p>
-                            <button onclick="like(this)" class="likebtn">37Likes</button>
+                            <button onclick="like(this)" class="likebtn">37</button>
                         </div>
                     <!-- definition on right -->
                         <div class="def">
@@ -56,7 +57,7 @@
         <!-- column 2 -->
         <div class="col2">
             <div class="addDef border">
-                <p class="yourDef">Dojonary is<br>defined by<strong>YOU</strong></p>
+                <p class="yourDef">Dojonary is <br> defined by<strong>YOU</strong></p>
                 <button onclick="hide(this)" class="defbtn">Add Definition</button>
             </div>
         </div>

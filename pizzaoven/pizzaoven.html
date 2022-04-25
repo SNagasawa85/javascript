@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Oven</title>
+    <link rel="stylesheet" href="pizzaoven.css">
+</head>
+<body>
+    <h1>Welcome to the Pizza Oven!</h1>
+    <p>Check the console for results</p>
+
+    <script>
+        
+        function pizzaOven(crust, sauce, cheeses, toppings){
+            var pizza = {};
+            pizza.crustType = crust;
+            pizza.sauceType = sauce;
+            pizza.cheeses = cheeses;
+            pizza.toppings = toppings;
+            return pizza;
+        }
+
+        var p1 = pizzaOven("deep dish", "traditional", ["mozzarella"],["pepperoni","sausage"]);
+        console.log(p1);
+
+        var p2 = pizzaOven("hand tossed", "marinara", ["mozzarella", "feta"], ["mushrooms", "olives", "onions"]);
+        console.log(p2);
+
+        var p3 = pizzaOven("thin", "white garlic", ["mozzarella", "feta", "goat"], ["sausage", "chicken", "onions"]);
+        console.log(p3);
+
+        var p4 = pizzaOven("stuffed", "marinara", ["mozzarella",], ["pepperoni", "pineapple", "ham"]);
+        console.log(p4);
+
+        function pizzaRandom(){
+            var cr =["deep dish", "stuffed", "hand tossed","thin"];
+            var sa =["traditional","marinara","white garlic"];
+            var che =["mozzarella","feta","goat","cheddar"];
+            var top =["pepperoni", "sausage", "pineapple","ham","chicken","bacon","japalenos"];
+            
+            var crnew = cr[randInt(0,cr.length-1)];
+            var sanew = sa[randInt(0,sa.length-1)];
+            var chenew = che[randInt(0,che.length-1)];
+            var topnew = top[randInt(0,top.length-1)];
+            
+            var pizzarand = pizzaOven(crnew,sanew,chenew,topnew);
+            console.log(pizzarand);
+        }
+        
+        pizzaRandom();
+        
+
+
+
+        function randInt(min,max){
+                return Math.floor(Math.random() * (max-min +1)) +min;
+            }
+
+    </script>
+</body>
+</html>
